@@ -1,0 +1,1 @@
+{"uuid":"18d35601-d55b-403f-8792-4a56ec5146d0","name":"qa.engagedly.tests.HomePageTest","children":["40374c72-6afc-4d16-a7d5-88e8568ca99b"],"befores":[{"name":"homeSetup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1619171246861,"stop":1619171247489}],"afters":[],"links":[],"start":1619171235889,"stop":1619171272603}
