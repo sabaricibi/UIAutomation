@@ -1,7 +1,7 @@
-package qa.engagedly.base;
+package qa.com.base;
 
-import qa.engagedly.utils.ElementUtil;
-import qa.engagedly.utils.OptionsManager;
+import qa.com.utils.ElementUtil;
+import qa.com.utils.OptionsManager;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -131,17 +131,17 @@ public class BasePage {
 			env = System.getProperty("env");
 			System.out.println("env value is--->" + env);
 			if (env == null) {
-				path = "./src/main/java/qa/engagedly/config/config.properties";
+				path = "./src/main/java/qa/com/config/config.properties";
 			} else {
 				switch (env) {
 				case "qa":
-					path = "./src/main/java/qa/engagedly/config/qa.config.properties";
+					path = "./src/main/java/qa/com/config/qa.config.properties";
 					break;
 				case "dev":
-					path = "./src/main/java/qa/engagedly/config/dev.config.properties";
+					path = "./src/main/java/qa/com/config/dev.config.properties";
 					break;
 				case "stage":
-					path = "./src/main/java/qa/engagedly/config/stage.config.properties";
+					path = "./src/main/java/qa/com/config/stage.config.properties";
 					break;
 				default:
 					System.out.println("Please pass the correct env value----> " + env);
